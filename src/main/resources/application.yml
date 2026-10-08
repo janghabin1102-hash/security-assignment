@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: security-assignment
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: ${DB_DDL_AUTO:validate}
+  jackson:
+    deserialization:
+      fail-on-unknown-properties: true
+      fail-on-numbers-for-enums: true
+jwt:
+  base64Secret: ${JWT_BASE64_SECRET}

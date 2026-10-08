@@ -1,0 +1,12 @@
+.gradle/
+.gradle-user-home/
+build/
+.tools/
+.idea/
+*.iml
+.DS_Store
+.env
+.env.*
+!.env.example
+src/main/resources/application-local.yml
+*.log
